@@ -9,13 +9,11 @@ require_once 'vendor/autoload.php';
 require_once 'autoload.php';
 
 use GraphAware\Neo4j\Client\ClientBuilder;
+use Dotenv\Dotenv;
+
+$environment = new Dotenv(__DIR__);
+$environment->load();
 
 $client = ClientBuilder::create()
-    ->addConnection('bolt', 'bolt://neo4j:password@localhost:7687')
+    ->addConnection("bolt", "bolt://{$_ENV['NEO4J_USER']}:{$_ENV['NEO4J_PASSWORD']}@{$_ENV['NEO4J_SERVER']}:{$_ENV['NEO4J_PORT']}")
     ->build();
-$query = "MATCH (n:Person)-[:FOLLOWS]->(friend) RETURN n.name, collect(friend) as friends";
-$result = $client->run($query);
-
-foreach ($result->getRecords() as $record) {
-    echo sprintf('Person name is : %s and has %d number of friends', $record->value('name'), count($record->value('friends')));
-}
