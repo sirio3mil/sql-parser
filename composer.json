@@ -1,7 +1,8 @@
 {
     "require": {
-        "graphaware/neo4j-php-client": "^4.0",
-        "php-http/cache-plugin": "^1.5",
-        "php-http/logger-plugin": "^1.0"
+        "graphaware/neo4j-php-client": "dev-master",
+        "php-http/cache-plugin": "dev-master",
+        "php-http/logger-plugin": "dev-master",
+        "vlucas/phpdotenv": "dev-master"
     }
 }
