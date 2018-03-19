@@ -6,7 +6,7 @@
  * Time: 14:25
  */
 
-namespace Utilities;
+namespace App\Utilities;
 
 
 class DumpFile

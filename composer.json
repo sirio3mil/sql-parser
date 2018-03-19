@@ -4,5 +4,8 @@
         "php-http/cache-plugin": "dev-master",
         "php-http/logger-plugin": "dev-master",
         "vlucas/phpdotenv": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {"App\\": "app/"}
     }
 }

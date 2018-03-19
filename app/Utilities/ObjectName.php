@@ -6,7 +6,7 @@
  * Time: 14:06
  */
 
-namespace Utilities;
+namespace App\Utilities;
 
 
 class ObjectName

@@ -6,7 +6,7 @@
  * Time: 14:49
  */
 
-namespace Utilities;
+namespace App\Utilities;
 
 
 class Cache

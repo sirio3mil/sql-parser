@@ -5,12 +5,12 @@
  * Date: 16/03/2018
  * Time: 8:58
  */
-require_once 'autoload.php';
+require_once 'vendor/autoload.php';
 
-use Utilities\FileName;
-use Utilities\DumpFile;
-use Utilities\Clock;
-use Utilities\Cache;
+use App\Utilities\FileName;
+use App\Utilities\DumpFile;
+use App\Utilities\Clock;
+use App\Utilities\Cache;
 
 try {
 

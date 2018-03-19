@@ -6,7 +6,6 @@
  * Time: 12:43
  */
 require_once 'vendor/autoload.php';
-require_once 'autoload.php';
 
 use GraphAware\Neo4j\Client\ClientBuilder;
 use Dotenv\Dotenv;
